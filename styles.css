@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+  margin: 0 2%;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  background: #f1f5f8;
+  min-height: 100vh;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.title-text {
+  white-space: nowrap;
+  font-size: 40px;
+  color: rgb(16, 42, 66);
+}
+hr {
+  width: 30%;
+  border: 2px solid rgb(73, 166, 233);
+  border-radius: 12px;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  background: white;
+  width: 65%;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px 10px rgb(219 213 213 / 15%);
+}
+#person-img {
+  border-radius: 50%;
+  border: 4px solid rgb(73, 166, 233);
+}
+.author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+#author-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(16, 42, 66);
+}
+#job-title {
+  font-size: 20px;
+  color: blue;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#info {
+  text-align: center;
+  font-size: 16px;
+  color: rgb(97, 125, 152);
+}
+.button-container {
+  display: flex;
+  gap: 16px;
+}
+.prev-btn,
+.next-btn {
+  border: 0;
+  background: none;
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(38 139 209);
+}
+.random-review-btn {
+  border: 2px solid rgb(73, 166, 233);
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 18px;
+  color: #111137;
+  background: transparent;
+}
+.random-review-btn:hover {
+  background: teal;
+  color: white;
+}
+
+/* Tablets */
+@media (min-width: 460px) and (max-width: 1280px) {
+  article {
+    width: 90%;
+  }
+}
+/* Mobiles */
+@media (max-width: 460px) {
+  .container {
+    gap: 20px;
+    justify-content: unset;
+    padding: 8px 0;
+  }
+  .title-text {
+    white-space: nowrap;
+    font-size: 28px;
+    color: rgb(16, 42, 66);
+  }
+  article {
+    width: 90%;
+    padding: 4px;
+  }
+  #info {
+    font-size: 14px;
+  }
+}
