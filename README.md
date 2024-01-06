@@ -1,1 +1,1 @@
-# reviews-slider
+# Reviews Slider - By Sheikh Suhail
